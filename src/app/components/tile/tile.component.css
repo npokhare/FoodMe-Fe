@@ -1,0 +1,26 @@
+.tile-wrapper{
+    flex: 1;
+    display: flex;
+    height: 160px;
+    width: auto;
+    background-color: #fff;
+    border: 1px solid #E2E2E2;
+    overflow: hidden;
+}
+
+.tile-content{
+   padding: 16px;
+}
+
+.image{
+    width: 158px;
+    height: 158px;
+    flex-shrink: 0;
+}
+
+.product-image{
+    width: 158px;
+    height: 160px;
+    flex-shrink: 0;
+    object-fit: cover;
+}

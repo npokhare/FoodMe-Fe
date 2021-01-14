@@ -1,0 +1,60 @@
+.ticket-wrapper{
+    padding-right: 40px;
+    float: right;
+    margin-top: -44.4rem;
+    position: sticky;
+    top: 90px;
+    z-index: 1;
+}
+
+.ticket{
+    height: auto;
+    width: 320px;
+    background-color: #fff;
+    box-shadow: -2px 1px 17px 11px rgba(34,34,34,.15);
+    position: relative;
+    border-top-right-radius: 12px;
+    padding: 20px;
+}
+
+.ticket-header{
+    font-size: calc(2.4rem + .3vw);
+    padding-bottom: 10px;
+}
+
+.ticket-sub-header{
+    font-size: 16px;
+    border-bottom: 1px solid rgba(112,112,112,.25);
+    padding-bottom: 20px;
+}
+
+.ticket-sub-header a{
+    color: red;
+}
+
+.order-line{
+    flex: 1 0 auto;
+    display: flex;
+}
+.orderline-item{
+    font-size: calc(2rem + .1vw);
+}
+.orderline-price{
+    font-size: calc(2rem + .1vw);
+    float: right;
+}
+button{
+    background-color:rgb(39, 37, 30);
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+.note{
+    padding-top: 16px;
+}
