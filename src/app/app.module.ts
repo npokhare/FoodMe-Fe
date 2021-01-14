@@ -11,6 +11,10 @@ import { TileComponent } from './components/tile/tile.component';
 import { HomeComponent } from './pages/home/home.component';
 import { OrderComponent } from './pages/order/order.component';
 import { AppRoutingModule } from './app-routing.module';
+import { LoginComponent } from './components/login/login.component';
+import { AboutUsComponent } from './components/about-us/about-us.component';
+import { ContactComponent } from './components/contact/contact.component';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 @NgModule({
   declarations: [
@@ -22,11 +26,15 @@ import { AppRoutingModule } from './app-routing.module';
     TicketComponent,
     TileComponent,
     HomeComponent,
-    OrderComponent
+    OrderComponent,
+    LoginComponent,
+    AboutUsComponent,
+    ContactComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    NgbModule
   ],
   providers: [],
   bootstrap: [AppComponent]
