@@ -1,0 +1,9 @@
+.menu-group{
+    padding: 0 40px;
+}
+.tiles{
+    display: flex;
+}
+.tile{
+    padding : 10px;
+}

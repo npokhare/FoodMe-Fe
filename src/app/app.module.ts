@@ -10,6 +10,7 @@ import { TicketComponent } from './components/ticket/ticket.component';
 import { TileComponent } from './components/tile/tile.component';
 import { HomeComponent } from './pages/home/home.component';
 import { OrderComponent } from './pages/order/order.component';
+import { AppRoutingModule } from './app-routing.module';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { OrderComponent } from './pages/order/order.component';
     OrderComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
