@@ -1,14 +1,14 @@
-<div class="header">
-    <div class="header-wrapper">
-        <ul>
-            <a href="#">
-                <img src="https://d2zv6vzmaqao5e.cloudfront.net/190x100!/foodticket/images/4741/_cms1561459381_naan-logo.jpg" width="70" height="40" alt="test">
-            </a>
-            <li><a (click)="open()">Login</a></li>
-            <li><a href="#contact">Contact</a></li>
-            <li><a href="#about-us">About us</a></li>
-            <li><a routerLink="/order">Order online</a></li>
-            <li><a routerLink="/">Home</a></li>
-        </ul>
-    </div>
-</div>
+<div class="header d-flex flex-column flex-md-row align-items-center p-3 px-md-4">
+    <a href="#">
+        <img class="my-0 mr-md-auto font-weight-normal"src="https://d2zv6vzmaqao5e.cloudfront.net/190x100!/foodticket/images/4741/_cms1561459381_naan-logo.jpg" width="70" height="40" alt="test">
+    </a>
+    <h5 class="my-0 mr-md-auto font-weight-normal"></h5>
+    <nav class="my-2 my-md-0 mr-md-3">
+        <a class="p-2 text-dark" routerLink="/">Home</a>
+        <a class="p-2 text-dark" routerLink="/order">Order online</a>
+        <a class="p-2 text-dark" href="#contact">Contact</a>
+        <a class="p-2 text-dark" href="#about">About us</a>
+        <a class="p-2 text-dark" (click)="open()">Login</a>
+    </nav>
+    <a class="btn btn-outline-primary" href="#">Sign up</a>
+  </div>
