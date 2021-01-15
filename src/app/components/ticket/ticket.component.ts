@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, HostListener, OnInit } from '@angular/core';
+import { TicketService } from './ticket.service';
 
 @Component({
   selector: 'app-ticket',
@@ -6,10 +7,16 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./ticket.component.css']
 })
 export class TicketComponent implements OnInit {
-
-  constructor() { }
+  constructor(public ticketService: TicketService) { }
 
   ngOnInit(): void {
   }
 
+  @HostListener('window:scroll', ['$event']) getScrollHeight(event) {
+    console.log(window.pageYOffset, event);
+    if(window.pageYOffset> -1 )
+     this.ticketService.showTicket = false;
+    else
+      this.ticketService.showTicket = true;
+ }
 }

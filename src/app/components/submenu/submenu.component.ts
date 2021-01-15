@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { TicketComponent } from '../ticket/ticket.component';
+import { TicketService } from '../ticket/ticket.service';
 
 @Component({
   selector: 'app-submenu',
@@ -6,9 +8,11 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./submenu.component.css']
 })
 export class SubmenuComponent implements OnInit {
+  constructor(public ticketService: TicketService) { }
 
-  constructor() { }
-
+  toggleTicket(){
+    this.ticketService.showTicket=!this.ticketService.showTicket
+  }
   ngOnInit(): void {
   }
 
